@@ -1,0 +1,28 @@
+.wrapper {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 50px;
+}
+
+.bookmarks_wrap {
+    text-align: center;
+}
+
+.bookmarks {
+    margin-right: 29%;
+}
+
+.detail_image {
+    text-align: center;
+}
+
+.detail_word {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    height: 50px;
+    position: relative;
+    transform: translateY(-100%);
+}
