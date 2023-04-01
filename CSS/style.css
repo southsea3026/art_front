@@ -1,0 +1,36 @@
+:root {
+    --body-color: #f0f4f5;
+    --text-color: rgb(0, 0, 0);
+    --accent-color: orange;
+    --bodybackground-color: lightgray;
+    --icons-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bodybackground-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.card_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 3px;
+    width: 31%;
+    display: flex;
+}
+
+.main_image {
+    max-height: 100%;
+    max-width: 100%;
+    float: left;
+}

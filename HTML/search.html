@@ -7,24 +7,35 @@
     <title>ART Club</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="allExhibits.html">전체전시목록</a>
-            </li>
-            <li>
-                <a href="search.html">검색</a>
-            </li>
-            <li>
-                <a href="bookmarks.html">북마크</a>
-            </li>
-            <li>
-                <a href="login.html">로그인</a>(정보수정, 로그아웃)
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+                <a class="navbar-brand" href="index.html" style="color: orange;">Home</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">검색</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="allExhibits.html">전체전시목록</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookmarks.html">북마크</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav" id="login-btn" style="display: none;">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        로그인
+                    </a>
+                </ul>
+            </div>
+        </div>
     </nav>
     search
     <div class="wrap">
