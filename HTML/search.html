@@ -31,8 +31,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="bookmarks.html">북마크</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="search.html">검색</a>
+                    <li>
+                    <form class="d-flex" method="get">
+                        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                     </li>
                 </ul>
                 <ul class="navbar-nav" id="login-btn" style="display: none;">
@@ -47,14 +50,177 @@
     <br>
     <br>
     <br>
-    search
+    search must link to allExhibits
     <div class="wrapper">
 
+        <!--sort button-->
+        <div class="dropdown">
+            <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                정렬순서
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">조회 순</a></li>
+                <li><a class="dropdown-item" href="#">최신 등록 순</a></li>
+                <li><a class="dropdown-item" href="#">종료 임박 순</a></li>
+            </ul>
+        </div>
+
+        <!--1row 그림만-->
+        <div class="container">
+            <hr class="mt-2 mb-5">
+            <div class="row text-center text-lg-start">
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="detail.html" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img1.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="detail.html" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img2.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="detail.html" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img3.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img4.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img5.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="detail.html" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img6.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img7.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img8.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/img9.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img1.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img2.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                      <img class="img-fluid img-thumbnail"src="/IMG/detail_img3.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img4.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img5.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img6.jpeg">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img7.jpeg">
+                    </a>
+                </div>
+            </div>   
+        </div>
+
+        <!--1row 그림과 설명-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img7.jpeg">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <p>
+                        전시명: 바이런 킴의 개인전 &lt;Marine Layer&gt;
+                        <br>
+                        전시기간: 2023. 3. 17(금)~ 4. 23(일)
+                        <br> 
+                        전시장소: 국제갤러리 부산(부산광역시 수영구 구락로 123번길 20 F1963)
+                        <br>
+                        관람시간: 화-목요일 10:00-18:00(월요일 휴관)
+                        <br>
+                        문의: 051-758-2239
+                    </p>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img7.jpeg">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <p>
+                        전시명: 바이런 킴의 개인전 &lt;Marine Layer&gt;
+                        <br>
+                        전시기간: 2023. 3. 17(금)~ 4. 23(일)
+                        <br> 
+                        전시장소: 국제갤러리 부산(부산광역시 수영구 구락로 123번길 20 F1963)
+                        <br>
+                        관람시간: 화-목요일 10:00-18:00(월요일 휴관)
+                        <br>
+                        문의: 051-758-2239
+                    </p>
+                </div>
+            </div>
 
 
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail"src="/IMG/detail_img7.jpeg">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <p>
+                        전시명: 바이런 킴의 개인전 &lt;Marine Layer&gt;
+                        <br>
+                        전시기간: 2023. 3. 17(금)~ 4. 23(일)
+                        <br> 
+                        전시장소: 국제갤러리 부산(부산광역시 수영구 구락로 123번길 20 F1963)
+                        <br>
+                        관람시간: 화-목요일 10:00-18:00(월요일 휴관)
+                        <br>
+                        문의: 051-758-2239
+                    </p>
+                </div>
+            </div>
 
-
-
+        </div>
 
     </div>
     
