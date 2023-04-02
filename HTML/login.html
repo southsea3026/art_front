@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/login.css">
     <script src="main.js" defer></script>
     <title>ART Club</title>
     <!--fontawsome Kit Code-->
@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="search.html">검색</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="allExhibits.html">전체전시목록</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="bookmarks.html">북마크</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">검색</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav" id="login-btn" style="display: none;">
@@ -50,7 +50,7 @@
     login
     <div class="wrapper">
 
-        <form>
+        <!-- <form>
             <div class="row">
                 <div class="col mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -87,10 +87,36 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </form> -->
 
-
-
+        <div class="container text-center">
+        <form action="login.jsp" method="post">
+            <img class="mb-4" src="/IMG/img4.png" alt="" width="10%">
+            <h1 class="h3 mb-3 fw-normal">ART List</h1>
+            
+            <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="id" placeholder="아이디 입력...">
+               <label for="id">아이디</label>
+            </div>
+            <div class="form-floating mb-3">
+               <input type="password" class="form-control" id="pwd" placeholder="Password">
+               <label for="pwd">비밀번호</label>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> 아이디 저장
+                    </label>
+                </div>
+                <div class="col mb-3">
+                    <a href="#">회원가입</a>
+                </div>
+                <div class="col"></div>
+            </div>
+            <button class="w-50 btn btn-lg btn-primary mb-5" type="submit">로그인</button>
+        </form>
+        </div>
 
 
     </div>
