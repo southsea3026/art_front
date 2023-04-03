@@ -31,8 +31,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="bookmarks.html">북마크</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="search.html">검색</a>
+                    <li>
+                        <form class="d-flex" method="get">
+                            <input class="form-control me-1" type="search" placeholder="검색" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
                     </li>
                 </ul>
                 <ul class="navbar-nav" id="login-btn" style="display: none;">
@@ -52,34 +55,10 @@
         <div class="bookmarks_wrap">
             <!--saved bookmarks-->
             <div class="bookmarks">
-                <a id="element" href="#">
+                <a id="myicon" onclick="changeicon()">
                 <i class="fa-regular fa-bookmark"></i>
                 </a>
             </div>
-
-            
-
-            <a href="#" onclick="changeText(this)"><i class="fa-regular fa-bookmark"></i></a>
-            <script>
-                function changemark(element) {
-                    element.innerHTML = '<i class="fa-solid fa-bookmark" style="color: #ff8800;"></i>'
-                }
-            </script>
-            <i class="fa-solid fa-bookmark" style="color: #ff8800;"></i>
-            
-
-
-            <p onclick="changeText(this)">이 문자열을 클릭해 보세요!</p>
-            <script>
-                function changeText(element) {
-                    element = document.createElement("i");
-                    element.innerHTML = '<i class="fa-solid fa-bookmark" style="color: #ff8800;"></i>'
-                    
-                    // element.innerHTML = "문자열의 내용이 바뀌었습니다!";
-                }
-            </script>
-
-
 
             <div>
                 <div class="detail_image">

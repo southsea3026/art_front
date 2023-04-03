@@ -21,6 +21,11 @@
     margin-right: 10%;
 }
 
+#myicon {
+    color: black;
+    text-decoration: none;    
+}
+
 footer {
     height: 50px;
     position: relative;

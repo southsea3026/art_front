@@ -46,3 +46,7 @@ footer {
     position: relative;
     transform: translateY(-100%);
 }
+
+#main_card_text {
+    font-size: 15px;
+}
